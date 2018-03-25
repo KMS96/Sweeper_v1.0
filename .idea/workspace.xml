@@ -7,16 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38913de8-8142-49dc-83e7-d993e2756499" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sweeper/Bomb.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sweeper/Game.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sweeper/Matrix.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Sweeper_jar/Sweeper.jar" afterPath="$PROJECT_DIR$/out/artifacts/Sweeper_jar/Sweeper.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sweeper/Sweeper$1.class" afterPath="$PROJECT_DIR$/out/production/Sweeper/Sweeper$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sweeper/Sweeper.class" afterPath="$PROJECT_DIR$/out/production/Sweeper/Sweeper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sweeper/sweeper/Ranges.class" afterPath="$PROJECT_DIR$/out/production/Sweeper/sweeper/Ranges.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sweeper.java" afterPath="$PROJECT_DIR$/src/Sweeper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sweeper/Ranges.java" afterPath="$PROJECT_DIR$/src/sweeper/Ranges.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -536,7 +531,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521967682857</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="30">
+      <created>1521971410040</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1521971410040</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -612,7 +614,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="23" />
-    <option name="LAST_COMMIT_MESSAGE" value="23" />
+    <MESSAGE value="30" />
+    <option name="LAST_COMMIT_MESSAGE" value="30" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
