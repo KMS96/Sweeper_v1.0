@@ -1,10 +1,7 @@
 package sweeper;
 
-/**
- * Created by Mikhail on 25.03.2018.
- */
 public class Game {
-    Bomb bomb;
+    private Bomb bomb;
 
     public Game(int cols, int rows, int bombs){
         Ranges.setSize(new Coord(cols, rows));

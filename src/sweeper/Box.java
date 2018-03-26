@@ -1,8 +1,5 @@
 package sweeper;
 
-/**
- * Created by Mikhail on 21.03.2018.
- */
 public enum Box {
     ZERO,
     NUM1,
@@ -22,4 +19,8 @@ public enum Box {
     NOBOMB;
 
     public Object image;
+
+    Box nextNumberBox(){
+        return Box.values()[this.ordinal() + 1]; // для увеличения цифры у бомб
+    }
 }

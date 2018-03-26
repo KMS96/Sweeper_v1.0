@@ -5,9 +5,7 @@ import sweeper.Coord;
 import sweeper.Game;
 import sweeper.Ranges;
 
-/**
- * Created by Mikhail on 21.03.2018.
- */
+
 public class Sweeper extends JFrame {
     private Game game;
     private final int IMAGE_SIZE = 50;

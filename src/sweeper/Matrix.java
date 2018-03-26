@@ -1,8 +1,5 @@
 package sweeper;
 
-/**
- * Created by Mikhail on 25.03.2018.
- */
 class Matrix {
     private Box [] [] matrix;
 
