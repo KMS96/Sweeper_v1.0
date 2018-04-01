@@ -25,12 +25,12 @@ class Bomb {
     }
 
     private void fixBombsCount(){ // если бомб задано больше чем площадь поля
-        int maxBombs = Ranges.getSize().x * Ranges.getSize().y / 2;
+        int maxBombs = Ranges.getSquare() / 2;
         if (totalBombs > maxBombs)
             totalBombs = maxBombs;
     }
 
-    private void placeBomb(){
+    private void placeBomb(){ // размещение бомб
         while (true) { // если бомб больше чем клеток поля
             // чтобы бомбы не расставлялись несколько раз в одну клетку
                 Coord coord = Ranges.getRandomCoord();

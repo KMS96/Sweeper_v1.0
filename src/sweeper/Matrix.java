@@ -11,7 +11,7 @@ class Matrix {
 
     Box get (Coord coord){
         if (Ranges.inRange(coord))
-        return matrix [coord.x][coord.y];
+            return matrix [coord.x][coord.y];
         return null;
     }
 

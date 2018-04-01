@@ -5,7 +5,7 @@ class Flag {
     private int totalFlaged;
     private int totalClosed;
 
-    void start(){
+    void start(){ // запуск игры, проставление клеток
         flagMap = new Matrix(Box.CLOSED);
         totalFlaged = 0;
         totalClosed = Ranges.getSquare();
@@ -17,7 +17,7 @@ class Flag {
 
     void setOpenedToBox(Coord coord) {
         flagMap.set(coord, Box.OPENED);
-        totalClosed--;
+        totalClosed --;
     }
 
     int getTotalFlaged() {
@@ -30,15 +30,15 @@ class Flag {
 
     private void setFlagedToBox(Coord coord) {
         flagMap.set(coord, Box.FLAGED);
-        totalFlaged++;
+        totalFlaged ++;
     }
 
     private void setClosedToBox(Coord coord) {
         flagMap.set(coord, Box.CLOSED);
-        totalFlaged--;
+        totalFlaged --;
     }
 
-    void toggleFlagedToBox(Coord coord) {
+    void toggleFlagedToBox(Coord coord) { // переключить значение флажка
         switch (flagMap.get(coord)){
             case FLAGED:
                 setClosedToBox(coord);
@@ -55,7 +55,25 @@ class Flag {
                 setFlagedToBox(coord);
     }
 
-    void setBombedToBox(Coord coord) {
+    void setBombedToBox(Coord coord) { // устанавливаем картинку взрыва бомбы
         flagMap.set(coord, Box.BOMBED);
+    }
+
+    void setOpenedToClosedBox(Coord coord) { // показать все бомбы когда проигрываем
+        if (Box.CLOSED == flagMap.get(coord))
+            flagMap.set(coord, Box.OPENED);
+    }
+
+    void setNobombToFlagedBox(Coord coord) {
+        if (Box.FLAGED == flagMap.get(coord))
+            flagMap.set(coord, Box.NOBOMB);
+    }
+
+    int getCountOfFlagedBoxesAround(Coord coord) { // получить кол-во флагов вокруг клетки
+        int count = 0;
+        for(Coord around : Ranges.getCoordsAround(coord))
+            if (flagMap.get(around) == Box.FLAGED)
+                count++;
+        return count;
     }
 }

@@ -13,11 +13,11 @@ public class Game {
 
     public void start(){ // создаем карту с бомбами(расставляем элементы)
         bomb.start();
-        flag.start();// вызываем инициализацию бомб
+        flag.start();
         state = GameState.PLAYED;
     }
 
-    public Box getBox(Coord coord){
+    public Box getBox(Coord coord){ // что находится в клетке
         if (Box.OPENED ==flag.get(coord))
             return bomb.get(coord);
         else
@@ -63,14 +63,16 @@ public class Game {
             }
     }
 
-    private void openBox(Coord coord){
+    private void openBox(Coord coord){ // открыть клетку
         switch (flag.get(coord)){
-            case OPENED: break;
+            case OPENED: setOpenedToClosedBoxesAroundNumber(coord);
+                break;
             case FLAGED: break;
             case CLOSED:
                 switch (bomb.get(coord)){
-                    case ZERO: openBoxesAroundZero(coord); // открыть пустые клетки
-                    break;
+                    case ZERO:
+                        openBoxesAroundZero(coord); // открыть пустые клетки
+                        break;
                     case BOMB:
                         openBombs(coord);
                         break;
@@ -80,8 +82,21 @@ public class Game {
         }
     }
 
+    private void setOpenedToClosedBoxesAroundNumber(Coord coord) {
+        if (Box.BOMB != bomb.get(coord))
+            if (bomb.get(coord).getNumber() == flag.getCountOfFlagedBoxesAround(coord))
+                for(Coord around : Ranges.getCoordsAround(coord))
+                    if (flag.get(around) == Box.CLOSED)
+                        openBox(around);
+    }
+
     private void openBombs(Coord bombedCoord){
         flag.setBombedToBox(bombedCoord);
+        for (Coord coord : Ranges.getAllCoords())
+            if (bomb.get(coord) == Box.BOMB)
+                flag.setOpenedToClosedBox(coord);
+            else
+                flag.setNobombToFlagedBox(coord);
         state = GameState.BOMBED;
     }
 
