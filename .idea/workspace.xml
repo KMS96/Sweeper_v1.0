@@ -6,19 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38913de8-8142-49dc-83e7-d993e2756499" name="Default" comment="v_1.0">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Sweeper_jar/Sweeper.jar" afterPath="" />
+    <list default="true" id="38913de8-8142-49dc-83e7-d993e2756499" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sweeper/Sweeper.class" afterPath="$PROJECT_DIR$/out/production/Sweeper/Sweeper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sweeper/sweeper/Ranges.class" afterPath="$PROJECT_DIR$/out/production/Sweeper/sweeper/Ranges.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sweeper.java" afterPath="$PROJECT_DIR$/src/Sweeper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sweeper/Bomb.java" afterPath="$PROJECT_DIR$/src/sweeper/Bomb.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sweeper/Box.java" afterPath="$PROJECT_DIR$/src/sweeper/Box.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sweeper/Coord.java" afterPath="$PROJECT_DIR$/src/sweeper/Coord.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sweeper/Flag.java" afterPath="$PROJECT_DIR$/src/sweeper/Flag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sweeper/Game.java" afterPath="$PROJECT_DIR$/src/sweeper/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sweeper/Matrix.java" afterPath="$PROJECT_DIR$/src/sweeper/Matrix.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sweeper/Ranges.java" afterPath="$PROJECT_DIR$/src/sweeper/Ranges.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -107,8 +98,8 @@
       <file leaf-file-name="Ranges.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sweeper/Ranges.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="38" column="46" lean-forward="false" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+            <state relative-caret-position="200">
+              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1440#1441#0" expanded="true" />
@@ -571,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522395668117</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="v_1.0">
+      <created>1522578260160</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1522578260160</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -588,7 +586,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09656301" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1206,8 +1204,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sweeper/Ranges.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="38" column="46" lean-forward="false" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+        <state relative-caret-position="200">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1440#1441#0" expanded="true" />
